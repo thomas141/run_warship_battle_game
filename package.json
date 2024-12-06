@@ -1,6 +1,10 @@
 {
+  "homepage": "https://thomas141.github.io/run_warship_battle_game",
   "main": "src/backend.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "node src/backend.js",
     "start": "node src/backend.js",
     "dev": "nodemon src/backend.js --ignore database.json"
   },
